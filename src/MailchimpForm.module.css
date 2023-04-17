@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #303030;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    backdrop-filter: blur(12px); /* 用于实现毛玻璃效果 */
+}
+
+form {
+    display: flex;
+    max-width: 100%;
+    width: 500px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    backdrop-filter: blur(8px); /* 用于实现毛玻璃效果 */
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    color: #303030;
+    border: none;
+}
+
+button[type="submit"] {
+    color: #fff;
+    background-color: #4eb4f1;
+    border-color: #4eb4f1;
+    padding: 12px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e8ebd;
+    border-color: #2e8ebd;
+}
+
+button[type="submit"]:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
